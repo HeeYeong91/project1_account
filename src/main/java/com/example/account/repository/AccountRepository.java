@@ -17,7 +17,7 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
 
     /**
      * 최근 생성 된 계좌 정보 가져오기
-     * @return 계좌정보
+     * @return 계좌 정보
      */
     Optional<Account> findFirstByOrderByIdDesc();
 
@@ -27,4 +27,11 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
      * @return 계좌 수
      */
     Integer countByAccountUser(AccountUser accountUser);
+
+    /**
+     * 계좌 번호로 계좌 찾기
+     * @param AccountNumber 계좌 번호
+     * @return 계좌 정보
+     */
+    Optional<Account> findByAccountNumber(String AccountNumber);
 }
