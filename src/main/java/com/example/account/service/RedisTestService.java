@@ -8,10 +8,15 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * Redis Test Service
+ * @author 이희영
+ */
 @Slf4j
 @Service
 @RequiredArgsConstructor
 public class RedisTestService {
+
     private final RedissonClient redissonClient;
 
     public String getLock() {

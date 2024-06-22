@@ -7,8 +7,13 @@ import org.springframework.context.annotation.Configuration;
 import redis.embedded.RedisServer;
 
 
+/**
+ * Redis 설정
+ * @author 이희영
+ */
 @Configuration
 public class LocalRedisConfig {
+
     @Value("${spring.redis.port}")
     private int redisPort;
 

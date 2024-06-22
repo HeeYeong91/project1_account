@@ -7,8 +7,13 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/**
+ * Redis Repository 설정
+ * @author 이희영
+ */
 @Configuration
 public class RedisRepositoryConfig {
+
     @Value("${spring.redis.host}")
     private String redisHost;
 
