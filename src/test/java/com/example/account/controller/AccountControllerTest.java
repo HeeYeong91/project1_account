@@ -30,6 +30,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest(AccountController.class)
 class AccountControllerTest {
+
     @MockBean
     private AccountService accountService;
 

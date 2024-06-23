@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * Account Controller
+ * 계좌 관련 컨트롤러
  * @author 이희영
  */
 @RestController
