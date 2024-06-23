@@ -3,7 +3,6 @@ package com.example.account.dto;
 import com.example.account.type.TransactionResultType;
 import jakarta.validation.constraints.*;
 import lombok.*;
-import org.springframework.context.annotation.Primary;
 
 import java.time.LocalDateTime;
 

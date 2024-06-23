@@ -1,7 +1,6 @@
 package com.example.account.controller;
 
 import com.example.account.domain.Account;
-import com.example.account.dto.AccountDto;
 import com.example.account.dto.AccountInfo;
 import com.example.account.dto.CreateAccount;
 import com.example.account.dto.DeleteAccount;
@@ -16,6 +15,9 @@ import java.util.stream.Collectors;
 
 /**
  * 계좌 관련 컨트롤러
+ * 1. 계좌 생성
+ * 2. 계좌 해지
+ * 3. 유저 아이디로 계좌 조회
  * @author 이희영
  */
 @RestController

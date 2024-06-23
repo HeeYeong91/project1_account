@@ -2,7 +2,6 @@ package com.example.account.domain;
 
 import com.example.account.exception.AccountException;
 import com.example.account.type.AccountStatus;
-import com.example.account.type.ErrorCode;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.data.annotation.CreatedDate;
