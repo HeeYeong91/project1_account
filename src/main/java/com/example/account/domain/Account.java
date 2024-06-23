@@ -12,6 +12,7 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 import java.time.LocalDateTime;
 
 import static com.example.account.type.ErrorCode.AMOUNT_EXCEED_BALANCE;
+import static com.example.account.type.ErrorCode.INVALID_REQUEST;
 
 /**
  * Account
@@ -56,5 +57,13 @@ public class Account {
         }
 
         balance -= amount;
+    }
+
+    public void cancelBalance(Long amount) {
+        if (amount < 0) {
+            throw new AccountException(INVALID_REQUEST);
+        }
+
+        balance += amount;
     }
 }
