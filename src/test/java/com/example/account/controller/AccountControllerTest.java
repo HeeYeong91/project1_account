@@ -17,6 +17,8 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.ArgumentMatchers.anyString;
@@ -91,6 +93,47 @@ class AccountControllerTest {
                 .andExpect(jsonPath("$.accountNumber").value("1234567890"))
                 .andDo(print());
     }
+    
+    @Test
+    @DisplayName("계좌 조회")
+    void successGetAccountByUserId() throws Exception {
+        //given
+        List<AccountDto> accountDtos =
+                Arrays.asList(
+                        AccountDto.builder()
+                                .accountNumber("123456789")
+                                .balance(1000L)
+                                .build(),
+                        AccountDto.builder()
+                                .accountNumber("1111111111")
+                                .balance(1000L)
+                                .build(),
+                        AccountDto.builder()
+                                .accountNumber("2222222222")
+                                .balance(1000L)
+                                .build()
+                );
+        given(accountService.getAccountsByUserId(anyLong()))
+                .willReturn(accountDtos);
+
+        //when
+
+        //then
+        mockMvc.perform(get("/account?user_id=1"))
+                .andDo(print())
+                .andExpect(jsonPath("$[0].accountNumber")
+                        .value("123456789"))
+                .andExpect(jsonPath("$[0].balance")
+                        .value(1000L))
+                .andExpect(jsonPath("$[1].accountNumber")
+                        .value("1111111111"))
+                .andExpect(jsonPath("$[1].balance")
+                        .value(1000L))
+                .andExpect(jsonPath("$[2].accountNumber")
+                        .value("2222222222"))
+                .andExpect(jsonPath("$[2].balance")
+                        .value(1000L));
+    }
 
     @Test
     void successGetAccount() throws Exception {
@@ -103,6 +146,7 @@ class AccountControllerTest {
                 );
 
         //when
+
         //then
         mockMvc.perform(get("/account/876"))
                 .andDo(print())

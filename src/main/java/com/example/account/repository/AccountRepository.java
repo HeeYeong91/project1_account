@@ -30,8 +30,15 @@ public interface AccountRepository extends JpaRepository<Account, Long> {
 
     /**
      * 계좌 번호로 계좌 찾기
-     * @param AccountNumber 계좌 번호
+     * @param accountNumber 계좌 번호
      * @return 계좌 정보
      */
-    Optional<Account> findByAccountNumber(String AccountNumber);
+    Optional<Account> findByAccountNumber(String accountNumber);
+
+    /**
+     * 유저로 계좌 찾기
+     * @param accountUser 유저
+     * @return 계좌 리스트
+     */
+    List<Account> findByAccountUser(AccountUser accountUser);
 }

@@ -2,6 +2,7 @@ package com.example.account.controller;
 
 import com.example.account.domain.Account;
 import com.example.account.dto.AccountDto;
+import com.example.account.dto.AccountInfo;
 import com.example.account.dto.CreateAccount;
 import com.example.account.dto.DeleteAccount;
 import com.example.account.service.AccountService;
@@ -9,6 +10,9 @@ import com.example.account.service.RedisTestService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Account Controller
@@ -58,6 +62,25 @@ public class AccountController {
                         request.getUserId(),
                         request.getAccountNumber())
         );
+    }
+
+    /**
+     * 유저 아이디로 계좌 조회
+     * 
+     * @param userId 유저 아이디
+     * @return 계좌 리스트
+     */
+    @GetMapping("/account")
+    public List<AccountInfo> getAccountsByUserId(
+            @RequestParam("user_id")
+            Long userId
+    ) {
+        return accountService.getAccountsByUserId(userId)
+                .stream().map(accountDto -> AccountInfo.builder()
+                        .accountNumber(accountDto.getAccountNumber())
+                        .balance(accountDto.getBalance())
+                        .build())
+                .collect(Collectors.toList());
     }
 
     @GetMapping("/get-lock")
