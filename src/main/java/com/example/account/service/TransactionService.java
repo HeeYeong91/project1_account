@@ -46,7 +46,6 @@ public class TransactionService {
      * 3. 사용자 아이디와 계좌 소유주가 다른 경우 - 실패
      * 4. 계좌가 이미 해지 상태인 경우 - 실패
      * 5. 거래금액이 잔액보다 큰 경우 - 실패
-     * 6. 거래금액이 너무 작거나 큰 경우  - 실패
      *
      * @param userId 유저 아이디
      * @param accountNumber 계좌 번호
@@ -116,7 +115,7 @@ public class TransactionService {
      * 2. 계좌가 없는 경우 - 실패
      * 3. 거래와 계좌가 일치하지 않는 경우 - 실패
      * 4. 거래금액과 거래취소금액이 다른 경우(부분 취소 불가능) - 실패
-     * 5. 1년이 넘은 겨래는 사용 취소 불가능 - 실패
+     * 5. 1년이 넘은 거래는 사용 취소 불가능 - 실패
      *
      * @param transactionId 트랜잭션 아이디
      * @param accountNumber 계좌 번호
