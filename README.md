@@ -25,6 +25,7 @@
 :hammer: Tools : ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white) 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<br />
 :books: languages : ![Spring](https://img.shields.io/badge/springboot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white) 
+![Java](https://img.shields.io/badge/JSP-%23ED8B00.svg?style=for-the-badge&logoColor=white)
 ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
 ![Junit5](https://img.shields.io/badge/Junit5-%23C21325?style=for-the-badge&logo=junit5&logoColor=white)
 ![H2](https://img.shields.io/badge/H2Database-4479A1.svg?style=for-the-badge) 
