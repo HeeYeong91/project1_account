@@ -4,12 +4,12 @@
 ## :page_facing_up: 목차
 1. 프로젝트 소개
 2. 프로젝트 기능
-   * [1. 계좌 생성 API]
-   * [2. 계좌 해지 API]
-   * [3. 계좌 확인 API]
-   * [4. 잔액 사용 API]
-   * [5. 잔액 사용 취소 API]
-   * [6. 거래 확인 API]
+   * [1. 계좌 생성 API](#1-계좌-생성-API)
+   * [2. 계좌 해지 API](#2-계좌-해지-API)
+   * [3. 계좌 확인 API](#3-계좌-확인-API)
+   * [4. 잔액 사용 API](#4-계좌-사용-API)
+   * [5. 잔액 사용 취소 API](#5-잔액-사용-취소-API)
+   * [6. 거래 확인 API](#6-거래-확인-API)
 <br />
 
 ## :eyes: 1. 프로젝트 소개
@@ -21,7 +21,8 @@
 <br />
 
 :calendar: 프로젝트 기간 : 2024년 6월 20일 ~ 2024년 6월 24일 <br />
-:hammer: Tools : ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)<br />
+:hammer: Tools : ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white) 
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<br />
 :books: languages : ![Spring](https://img.shields.io/badge/springboot-%236DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white) 
 ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=for-the-badge&logo=Gradle&logoColor=white)
 ![Junit5](https://img.shields.io/badge/Junit5-%23C21325?style=for-the-badge&logo=junit5&logoColor=white)
@@ -29,5 +30,17 @@
 ![Jpa](https://img.shields.io/badge/Jpa-%236DB33F.svg?style=for-the-badge)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 ![Mockito](https://img.shields.io/badge/Mockito-e0e0e0?style=for-the-badge)
-![Lombok](https://img.shields.io/badge/Lombok-%23ffffff.svg?style=for-the-badge)
+![Lombok](https://img.shields.io/badge/Lombok-%23ffffff.svg?style=for-the-badge) <br />
 <br />
+
+프로젝트 엔티티 구조
+![Account](https://github.com/HeeYeong91/project1_account/assets/139057065/49c82e00-2bac-4f70-828e-874ab1e0b397) <br />
+
+
+## :pushpin: 2. 프로젝트 기능
+## API 명세
+
+
+<br />
+
+## 1. 계좌 생성 API
