@@ -20,7 +20,7 @@
 거래금액만큼 늘리는(결제 취소) 거래 관리 기능을 제공하는 시스템입니다. <br />
 <br />
 
-:smile: 개발 인원 : 1명
+:smile: 개발 인원 : 1명 <br />
 :calendar: 프로젝트 기간 : 2024년 6월 20일 ~ 2024년 6월 24일 <br />
 :hammer: Tools : ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white) 
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)<br />
